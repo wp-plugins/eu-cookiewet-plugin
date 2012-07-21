@@ -18,7 +18,7 @@ Een simpele plugin voor WordPress om je website te laten voldoen aan de cookiewe
 3. Verander de instellingen van de cookie-balk
 4. Verander de tekst van je Cookie Policy pagina
 
-=== Frequently Asked Questions ===
+== Frequently Asked Questions ==
 
 = Is deze plugin altijd gratis te gebruiken? =
 Ja, deze plugin is voor altijd gratis te gebruiken. Er zal nooit geld voor worden gevraagd.
