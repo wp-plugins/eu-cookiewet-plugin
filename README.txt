@@ -3,13 +3,13 @@ Contributors: Mijndert Stuij, Jorijn Schrijvershof
 Tags: cookies, eu, nl, vertaling, cookiewet
 Requires at least: 3.3.2
 Tested up to: 3.4.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Een simpele plugin voor WordPress om je website te laten voldoen aan de cookiewet. De plugin zal een balk bovenaan de website plaatsen om de gebruiker te laten weten dat er cookies gebruikt worden. Ook wordt er een pagina aangemaakt welke linkt naar een zelf in te vullen cookie policy.
+Een simpele plugin voor WordPress om een boodschap op je website te plaatsen dat je cookies gebruikt. De plugin zal een balk bovenaan de website plaatsen om de gebruiker te laten weten dat er cookies gebruikt worden. Ook wordt er een pagina aangemaakt welke linkt naar een zelf in te vullen cookie policy.
 
 == Installation ==
 
@@ -18,7 +18,10 @@ Een simpele plugin voor WordPress om je website te laten voldoen aan de cookiewe
 3. Verander de instellingen van de cookie-balk
 4. Verander de tekst van je Cookie Policy pagina
 
-=== Frequently Asked Questions ===
+== Frequently Asked Questions ==
+
+= Waar kan ik terecht met klachten? =
+De schrijver van deze plugin is niet verantwoordelijk voor enige technische of persoonlijke schade die veroorzaakt is door deze plugin.
 
 = Is deze plugin altijd gratis te gebruiken? =
 Ja, deze plugin is voor altijd gratis te gebruiken. Er zal nooit geld voor worden gevraagd.
