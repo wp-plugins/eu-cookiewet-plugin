@@ -5,7 +5,7 @@ Plugin Name: EU Cookiewet Plugin (Nederlands)
 Plugin URI: http://github.com/mijndert
 Description: Een simpele plugin voor WordPress om een boodschap op je website te plaatsen dat je cookies gebruikt.
 Author: Mijndert Stuij
-Version: 1.2
+Version: 1.3
 Author URI: http://mijndertstuij.nl/
 */
 
@@ -270,7 +270,7 @@ class EUCookieWet
 
 								if ( $pageid == 0 )
 								{
-									echo '<div class="updated settings-error">Pagina is niet aangemaakt.</div>';
+									echo '<div class="updated settings-error">De Cookie Policy pagina is niet aangemaakt na een fout. Bekijk uw Pagina overzicht om te kijken of er misschien al een Cookie Policy pagina bestaat.</div>';
 								}
 								else
 								{
