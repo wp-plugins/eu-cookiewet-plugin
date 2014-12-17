@@ -1,11 +1,11 @@
 <?php
 
 /*
-Plugin Name: EU Cookie Law Multi-language Bar
+Plugin Name: EU Cookie Law Bar
 Plugin URI: http://mijndert.github.com/eu-cookiewet-wordpress-plugin
 Description: A simple WordPress plugin which helps you comply with the EU cookies and privacy directive by showing a message that cookies are used on the website.
-Authors: Mijndert Stuij, Jorijn Schrijvershof, Remco Brink
-Version: 1.6
+Authors: Mijndert Stuij
+Version: 2.0
 */
 
 /**
@@ -29,7 +29,7 @@ class EUCookieWet
    */
   public static function on_admin_menu()
   {
-    add_options_page('EU Cookiewet', 'EU Cookiewet', 'manage_options', 'eu_cookiewet_plugin', array('EUCookieWet', 'eu_cookiewet_opties_pagina'));
+    add_options_page('EU Cookie Bar', 'EU Cookie Bar', 'manage_options', 'eu_cookiewet_plugin', array('EUCookieWet', 'eu_cookiewet_opties_pagina'));
   }
 
   /**
@@ -41,9 +41,9 @@ class EUCookieWet
   {
     register_setting('eu_cookiewet_opties', array('EUCookieWet', 'eu_cookiewet_opties'), 'eu_cookiewet_opties_validate');
     add_settings_section('eu_cookie_main', '', array('EUCookieWet', 'eu_cookie_section_text'), 'eu_cookie', 'eu_cookie_main' );
-    add_settings_field('eu_cookie_text', 'Notificatie', array('EUCookieWet', 'eu_cookie_text_settings'), 'eu_cookie', 'eu_cookie_main' );
-    add_settings_field('eu_cookie_accept', 'Knop voor acceptatie', array('EUCookieWet', 'eu_cookie_accept_settings'), 'eu_cookie', 'eu_cookie_main');
-    add_settings_field('eu_cookie_more', 'Meer informatie link', array('EUCookieWet', 'eu_cookie_more_settings'), 'eu_cookie', 'eu_cookie_main');
+    add_settings_field('eu_cookie_text', 'Notification', array('EUCookieWet', 'eu_cookie_text_settings'), 'eu_cookie', 'eu_cookie_main' );
+    add_settings_field('eu_cookie_accept', 'Accept button', array('EUCookieWet', 'eu_cookie_accept_settings'), 'eu_cookie', 'eu_cookie_main');
+    add_settings_field('eu_cookie_more', 'Link to cookie policy', array('EUCookieWet', 'eu_cookie_more_settings'), 'eu_cookie', 'eu_cookie_main');
   }
 
   /**
@@ -115,7 +115,7 @@ class EUCookieWet
    * @param  array $input input values
    * @return array        sanitized input values
    */
-  public static function eu_cookiewet_opties_validate($input)
+  /** public static function eu_cookiewet_opties_validate($input)
   {
     $options = get_option( 'eu_cookiewet_opties' );
     $options['eu_cookie_text_settings']   = trim($input['eu_cookie_text_settings']);
@@ -123,7 +123,7 @@ class EUCookieWet
     $options['eu_cookie_more_settings']   = trim($input['eu_cookie_more_settings']);
 
     return $options;
-  }
+  } **/
 
   /**
    * makes sure jquery is loaded
@@ -254,7 +254,7 @@ class EUCookieWet
   function eu_cookiewet_opties_pagina()
   { ?>
   <div class="wrap">
-      <h2><?php _e('EU Cookiewet Plugin', 'eucookiewet'); ?></h2>
+      <h2><?php _e('EU Cookie Bar Plugin', 'eucookiewet'); ?></h2>
       <div id="poststuff" class="metabox-holder has-right-sidebar">
           <div class="meta-box-sortabless">
               <div class="postbox">

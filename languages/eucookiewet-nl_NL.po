@@ -13,6 +13,13 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: /Users/rbb/Downloads/code/eu-cookiewet-plugin\n"
 
+
+#: /Users/rbb/Downloads/code/eu-cookiewet-plugin/eu-cookiewet-plugin.php:56
+msgid ""
+"Notification"
+msgstr ""
+"Notificatie"
+
 #: /Users/rbb/Downloads/code/eu-cookiewet-plugin/eu-cookiewet-plugin.php:56
 msgid ""
 "You can use these settings to change the text of the plugin on your website."
